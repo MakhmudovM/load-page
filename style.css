@@ -1,0 +1,71 @@
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+  .loadanime{
+margin: 0 auto;
+position: relative;
+height: 100vh;
+  }
+.load-move{
+  position: fixed;
+    background-color: #e74c3c;
+    animation: bg-color 10s infinite;
+    height: 100% !important;
+    width: 100vw;
+}
+@keyframes bg-color {
+  0% { background-color: #FF3333; }
+  20% { background-color: #010101; }
+  40% { background-color: #010101; }
+  60% { background-color: #FF3333; }
+  80% { background-color: #010101; }
+  100% { background-color: #FF3333; }
+}
+.loading-logo{
+  width: 15vw;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+  z-indx:100;
+  left:50%;
+  top:50%; 
+  transform: translate(-50%, -50%);
+  filter: hue-rotate(180deg) invert(100%) saturate(148%);
+}
+#load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+  }
+/* 拡大 */
+.zoomIn{
+  
+  animation-name:zoomInAnime;
+  animation-duration:10s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes zoomInAnime{
+  from {
+  transform: scale(0.6);
+  }
+
+  to {
+      transform: scale(2);
+  }
+}
